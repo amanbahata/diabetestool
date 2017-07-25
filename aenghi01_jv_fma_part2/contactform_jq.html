@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Contact Form</title>
+    <link rel="stylesheet" type="text/css" href="contactform_jq.css">
+    <script src="jquery-3.1.0.min.js"></script>
+    <script src="jquery.validate.min.js"></script>
+    <script src="contactform_jq.js"></script>
+</head>
+
+<body>
+    <h1 id="pageheading">Contact Form</h1>
+    <form id="contactform">
+        <fieldset>
+            <div>
+                <br>
+                <label class="details" for="fname">First Name: </label>
+                <input type="text" size="21" name="fname" id="fname">
+            </div>
+            <div>
+                <br>
+                <label class="details" for="lname">Last Name: </label>
+                <input type="text" size="21" name="lname" id="lname">
+            </div>
+            <div>
+                <br>
+                <p class="details">Title: </p>
+                <select id="title">
+                    <option value="Mr." selected>Mr.</option>
+                    <option value="Ms.">Ms.</option>
+                    <option value="Mrs">Mrs</option>
+                    <option value="Miss">Miss</option>
+                    <option value="Master">Master</option>
+                </select>
+                <span class="optionsHint">(Select from the available list.)</span>
+            </div>
+            <div>
+                <br>
+                <label class="details" for="HAN">Health Authority Number: </label>
+                <img src="questionmark.png" id="questionmark" alt="questionmark">
+                <div id="tooltip">If you do not know your ZHA number, please contact your GP</div>
+                <input type="text" name="HAN" id="HAN">
+            </div>
+            <div>
+                <br>
+                <label class="details" for="email">Email: </label>
+                <input type="email" name="email" id="email">
+            </div>
+            <div>
+                <br>
+                <label class="details" for="tnumber">Telephone Number </label>
+                <input type="text" name="tnumber" id="tnumber">
+            </div>
+            <div id="submitDiv">
+                <br>
+                <input type="submit" name="submit" id="submit" value="Submit">
+            </div>
+        </fieldset>
+    </form>
+</body>
+
+</html>

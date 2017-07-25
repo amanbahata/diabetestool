@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+   <head>
+      <meta charset="utf-8">
+      <title>Contact Form</title>
+      <link rel="stylesheet" type="text/css" href="diabetestool.css">
+      <script src="contactform.js"></script>
+   </head>
+   <body>
+      <h1 id="pageheading">Contact Form</h1>
+
+      <form id="contactform">
+         <fieldset>  
+            <div>
+               <br>
+               <label for="fname" class="details">First Name: </label>
+               <input type="text" size="21" name="fname" id="fname">
+               <span id="fnameErr" class="error"> * You must enter a first name.</span> 
+            </div>
+            <div>
+               <br>
+               <label for="lname" class="details">Last Name: </label>
+               <input type="text" size="21" name="lname" id="lname">
+               <span id="lnameErr" class="error"> * You must enter a last name.</span> 
+            </div>
+            <div>
+               <br>
+               <p class = "title">Title: </p>
+               <select id="title">
+                  <option value="Mr." selected>Mr.</option>
+                  <option value="Ms.">Ms.</option>
+                  <option value="Mrs">Mrs</option>
+                  <option value="Miss">Miss</option>
+                  <option value="Master">Master</option>
+               </select>
+               <span class="optionsHint">(Select from the available list.)</span> 
+            </div>
+            <div>
+               <br>
+               <label for="HAN" class="details">Health Authority Number: </label>
+               <img src="questionmark.png" id="questionmark" alt="questionMark">
+               <input type="text" name="HAN" id="HAN">
+               <div  id="tooltip">If you do not know your ZHA number, please contact your GP</div>
+               <span id="HANErr" class="error">* You must enter a valid HAN number.</span>
+            </div>
+            <div>
+               <br>
+               <label for="email" class="details">Email: </label>
+               <input type="text" name="email" id="email">
+               <span id="emailErr" class="error"> * You must enter a valid email address.</span>    
+            </div>
+            <div>
+               <br>
+               <label for="tnumber" class="details">Telephone Number </label>
+               <input type="text" name="tnumber" id="tnumber">  
+               <span id="tnumberErr" class="error"> * You must enter a valid telephone number.</span>  
+            </div>
+            <div id="submitDiv">
+               <br>
+               <input type="submit" name="submit" id="submit" value="Submit">
+            </div>
+         </fieldset>
+      </form>
+   </body>
+</html>

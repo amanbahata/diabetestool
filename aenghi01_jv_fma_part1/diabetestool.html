@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+<head>
+   <meta charset="utf-8">
+   <title>Diabetes Tool</title>
+   <link rel="stylesheet" type="text/css" href="diabetestool.css">
+   <script src="diabetestool.js"></script>
+</head>
+<body>
+   <h1 id="pageheading">Diabetes Risk Assessment Tool</h1>
+
+   <form id="assessment">
+      <fieldset id="controls">
+         <div>
+            <br>
+            <div class="question">How old are you?</div>
+            <div class="answer">1-25  <input type="radio" name="age" value = "0" checked = "checked" > </div>
+            <div class="answer">26-40 <input type="radio" name="age" value = "5"></div>
+            <div class="answer">41-60 <input type="radio" name="age" value = "8"></div>
+            <div class="answer">60+   <input type="radio" name="age" value = "10"></div>
+         </div>
+         <div>
+            <br>
+            <div class="question">What is your BMI?</div>
+            <div class="answer">0-25  <input type="radio" name="bmi" value = "0"  checked = "checked" > </div>
+            <div class="answer">26-30 <input type="radio" name="bmi" value = "0"></div>
+            <div class="answer">31-35 <input type="radio" name="bmi" value = "9"></div>
+            <div class="answer">35+   <input type="radio" name="bmi" value = "10"></div>
+         </div>
+         <div>
+            <br>
+            <div class="question">Does anybody in your family have diabetes?</div>
+               <div class="answer">No.<input type="radio" name="familyHistory" value = "0"  checked = "checked" > </div>
+               <div class="answer">Grandparent <input type="radio" name="familyHistory" value = "7"></div>
+               <div class="answer">Sibling<input type="radio" name="familyHistory" value = "15"></div>
+               <div class="answer">Parent<input type="radio" name="familyHistory" value = "15"></div>
+         </div>
+         <div>
+            <br>
+            <div class="question">How would you describe your diet?</div>
+               <div class="answer">Low sugar<input type="radio" name="diet" value = "0"  checked = "checked" ></div> 
+               <div class="answer">Normal sugar<input type="radio" name="diet" value = "0"></div>
+               <div class="answer">Quite high sugar?<input type="radio" name="diet" value = "7"></div>
+               <div class="answer">High sugar<input type="radio" name="diet" value = "10"></div>  
+         </div>
+         
+         <br>
+         <input type="submit" name="submit" id="submit" value="Calculate">
+      </fieldset>
+   </form>
+   <div id="message"></div>
+</body>
+</html>
